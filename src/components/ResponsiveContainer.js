@@ -16,6 +16,15 @@ import {
   Visibility,
 } from 'semantic-ui-react'
 
+// TO DO 
+//
+// This component needs to conditionally render the HomepageHeading 
+// depending on whether or not it's on the main homepage based on route. 
+// Must check if there is some kind of boolean check for seeing what the route is at the moment, 
+// maybe pass down a prop if it's on a specific route or else have this component check the history or URL and set to state 
+// 
+// Make all the links route properly
+
 const { MediaContextProvider, Media } = createMedia({
   breakpoints: {
     mobile: 0,
@@ -62,10 +71,12 @@ HomepageHeading.propTypes = {
   mobile: PropTypes.bool,
 }
 
+
 /* Heads up!
  * Neither Semantic UI nor Semantic UI React offer a responsive navbar, however, it can be implemented easily.
  * It can be more complicated, but you can create really flexible markup.
  */
+
 class DesktopContainer extends Component {
   state = {}
 

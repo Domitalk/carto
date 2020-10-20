@@ -17,6 +17,7 @@ import {
 } from 'semantic-ui-react'
 import ResponsiveContainer from '../components/ResponsiveContainer'
 
+
 const { MediaContextProvider, Media } = createMedia({
   breakpoints: {
     mobile: 0,
